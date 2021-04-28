@@ -1,0 +1,11 @@
+{% extends "main.html"%}
+{% block content %}
+ {% for item in items %}
+  <div>
+      <img src="{{ item.image.url }}" alt="" width='350' height='350'>
+      <h1>{{ item.title }}</h1>
+      <p>{{ item.price }} руб.</p>
+      <i class="fas fa-2x fa-long-arrow-alt-right"></i>
+  </div>
+ {% endfor %}
+{% endblock content %}
